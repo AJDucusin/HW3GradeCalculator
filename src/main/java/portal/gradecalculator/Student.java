@@ -10,8 +10,6 @@ public class Student {
     private float quiz3;
     private float averageGrade;
    
-    //getter and setter methods
-    //getter methods
     public String getStudentNumber() {
         return studentNumber;
     }
@@ -57,7 +55,7 @@ public class Student {
         quiz3 = q3;
     }
    
-    //methods
+
     public float computeAverage() {
         averageGrade = (quiz1 + quiz2 + quiz3) / 3;
         return averageGrade;
