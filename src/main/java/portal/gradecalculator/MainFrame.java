@@ -13,7 +13,6 @@ import javax.swing.SpringLayout;
 
 public class MainFrame extends JFrame {
     
-    private JFrame frame;
     private JPanel panel;
     private JLabel lblStudentName, lblStudentNo, lblQuiz1, lblQuiz2, lblQuiz3;
     private JTextField txtStudentName, txtStudentNo, txtQuiz1, txtQuiz2, txtQuiz3;
@@ -30,12 +29,11 @@ public class MainFrame extends JFrame {
     {
         
         // *** Initiating Main Frame Start *** //
-        frame = new JFrame();
-        frame.setTitle("Grade Calculator");
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.setSize(550, 350);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+        this.setTitle("Grade Calculator");
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setSize(550, 250);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
         // *** Initiating Main Frame End *** //
         
         
@@ -44,7 +42,7 @@ public class MainFrame extends JFrame {
         lblStudentName = new JLabel("Student Name: ");
         txtStudentName = new JTextField(30);
         
-        lblStudentNo = new JLabel("Student Number: ");
+        lblStudentNo = new JLabel("Student No.: ");
         txtStudentNo = new JTextField(30);
         
         lblQuiz1 = new JLabel("Quiz 1: ");
@@ -113,7 +111,7 @@ public class MainFrame extends JFrame {
         layout.putConstraint(SpringLayout.NORTH, calculate, 6, SpringLayout.SOUTH, txtQuiz3);
         layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, calculate, 0, SpringLayout.HORIZONTAL_CENTER, panel);
         
-        frame.add(panel);
+        this.add(panel);
         // *** Setting Layout End *** //
         
         
